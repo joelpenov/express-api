@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="customers">
+      <tr>
+        <th>Resource</th>
+        <th>URL</th>
+      </tr>
+      <tr>
+        <td>Books</td>
+        <td><a href="/api/books">api/books</a></td>
+      </tr>
+      <tr>
+        <td>Book</td>
+        <td><a href="/api/books/5d191f36a2d7ce6ec437ef23">api/book/{id}</a></td>
+      </tr>
+    </table>
+  </body>
+</html>
